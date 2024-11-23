@@ -7,6 +7,9 @@
 
 { margin: 0; padding: 0; }
 
+body{
+	background-color: black;
+}
 
 
 h1{
@@ -27,6 +30,11 @@ h3{
 
 img{
 	max-width:10%;
+	transition: filter 0.3s ease;
+}
+
+img:hover {
+    filter: grayscale(100%);
 }
 
 .circlePortrait{
@@ -48,6 +56,7 @@ img{
 }
 
 .container {
+	background-color: white;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -72,6 +81,19 @@ h2 a:visited {
   text-decoration:underline;
 }
 h2 a:hover {
+  color: red;
+  text-decoration:underline;
+}
+
+h3 a:link {
+  color: DeepSkyBlue;
+  text-decoration:underline;
+}
+h3 a:visited {
+  color: #C5B4E3;
+  text-decoration:underline;
+}
+h3 a:hover {
   color: red;
   text-decoration:underline;
 }
